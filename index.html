@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Markdown Previewer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <div id="mark-down" class="container-fluid">
+      <div class="row">
+        <div id="left" class="col-md-6 col-xs-12">
+          <div id="title" class="col-md-12 col-xs-12">
+            <h1 class="col-md-6 col-xs-6">Markdown Previewer</h1>
+            <span class="col-md-6 col-xs-6 author"
+              ><a class="btn btn-primary" href="http://www.wohenfang.com" target="_blank"
+                >下载源码&nbsp;<i class="fa fa-download"></i></a
+            ></span>
+          </div>
+          <div id="editor-body" class="col-md-12 col-xs-12">
+            <textarea
+              name=""
+              id="editor"
+              class="form-control"
+              placeholder=""
+            ></textarea>
+          </div>
+        </div>
+        <div id="right" class="col-md-6 col-xs-12">
+          <div id="preview"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.8.2/marked.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
